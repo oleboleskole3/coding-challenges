@@ -1,6 +1,6 @@
 use std::{collections::HashMap, fs};
 
-// const datapath: str = "data.txt";
+const DATAPATH: &str = "data.txt";
 
 fn main() {
     let data = read_data();
@@ -59,5 +59,5 @@ fn main() {
 }
 
 fn read_data() -> String {
-    fs::read_to_string("data.txt").expect("File doesn't exist")
+    fs::read_to_string(DATAPATH).expect("File doesn't exist")
 }
